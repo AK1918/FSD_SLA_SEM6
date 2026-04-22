@@ -1,0 +1,14 @@
+{
+  "name": "ecobite",
+  "version": "1.0.0",
+  "description": "Smart Inventory & Surplus Food Redistributor",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
